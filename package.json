@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
+    "start:example": "parcel build index.html && npx http-server dist -p 1234",
     "test": "echo \"Error: no test specified\"",
     "cz": "git-cz",
-    "lint": "eslint --ext js src",
+    "lint": "eslint --ext js,ts src",
     "pre-commmit": "yarn test && yarn lint && pretty-quick --staged"
   },
   "keywords": [],
@@ -17,12 +18,15 @@
     "@babel/core": "^7.8.6",
     "idb": "^5.0.1",
     "parcel-bundler": "^1.12.4",
-    "regenerator-runtime": "^0.13.3"
+    "regenerator-runtime": "^0.13.3",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.8.6",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
     "axios": "^0.19.2",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
