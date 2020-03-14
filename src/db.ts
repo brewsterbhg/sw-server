@@ -7,10 +7,9 @@ import {
   IDBPTransaction,
 } from 'idb';
 
-import { schema } from '../schema/schema.json';
+import { schema } from '../schema';
 import { Store } from './interfaces';
 
-// const READ_ACCESS = "readonly";
 const WRITE_ACCESS = 'readwrite';
 const DB_NAME = 'sw-server';
 const VERSION = 1;
@@ -24,7 +23,10 @@ let db: IDBPDatabase;
  * @param {Store} store
  * @returns {Promise<void>}
  */
-async function createStore(db: IDBPDatabase, store: Store): Promise<void> {
+export async function createStore(
+  db: IDBPDatabase,
+  store: Store,
+): Promise<void> {
   const { storeName, keyPath, autoIncrement } = store;
 
   if (!db.objectStoreNames.contains(storeName)) {
@@ -38,8 +40,10 @@ async function createStore(db: IDBPDatabase, store: Store): Promise<void> {
  * @param {string} storeName
  * @returns {Promise<IDBPTransaction>}
  */
-async function setupTransaction(storeName: string): Promise<IDBPTransaction> {
-  return db.transaction(storeName, WRITE_ACCESS) as IDBPTransaction;
+export async function setupTransaction(
+  storeName: string,
+): Promise<IDBPTransaction<unknown, [string]>> {
+  return db.transaction(storeName, WRITE_ACCESS);
 }
 
 /**
@@ -49,9 +53,9 @@ async function setupTransaction(storeName: string): Promise<IDBPTransaction> {
  * @param {IDBPTransaction} tx
  * @returns {Promsie<IDBPObjectStore>}
  */
-async function getObjectStore(
+export async function getObjectStore(
   storeName: string,
-  tx: IDBPTransaction,
+  tx: IDBPTransaction<unknown, [string]>,
 ): Promise<IDBPObjectStore> {
   return tx.objectStore(storeName);
 }
@@ -66,7 +70,7 @@ async function getObjectStore(
 export async function find(
   storeName: string,
   id: string | number,
-): Promise<any> {
+): Promise<unknown> {
   return await db
     .transaction(storeName)
     .objectStore(storeName)
@@ -82,7 +86,7 @@ export async function find(
  */
 export async function add(storeName: string, data: object): Promise<void> {
   const tx = await setupTransaction(storeName);
-  const store = await getObjectStore(storeName, tx);
+  const store: IDBPObjectStore = await getObjectStore(storeName, tx);
   await store.put(data);
   await tx.done;
 }
@@ -99,7 +103,7 @@ export async function remove(
   id: string | number,
 ): Promise<void> {
   const tx = await setupTransaction(storeName);
-  const store = await getObjectStore(storeName, tx);
+  const store: IDBPObjectStore = await getObjectStore(storeName, tx);
   await store.delete(id);
   await tx.done;
 }
@@ -116,11 +120,13 @@ export async function seed(): Promise<void> {
 
   db = await openDB(DB_NAME, VERSION, {
     upgrade(db) {
-      schema.forEach(async (store: Store) => await createStore(db, store));
+      (schema as any).forEach(
+        async (store: Store) => await createStore(db, store),
+      );
     },
   });
 
-  schema.forEach(({ storeName, data }) =>
+  (schema as any).forEach(({ storeName = '', data = [] }: Partial<Store>) =>
     data.forEach(async (item: object) => await add(storeName, item)),
   );
 }
