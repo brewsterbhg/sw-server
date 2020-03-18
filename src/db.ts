@@ -7,14 +7,10 @@ import {
   IDBPTransaction,
 } from 'idb';
 
+import { getDBInstance, setDBInstance } from './instance';
 import { schema } from '../schema';
 import { Store } from './interfaces';
-
-const WRITE_ACCESS = 'readwrite';
-const DB_NAME = 'sw-server';
-const VERSION = 1;
-
-let db: IDBPDatabase;
+import { WRITE_ACCESS, DB_NAME, VERSION } from './constants/db';
 
 /**
  * Create a new IndexedDB store
@@ -43,7 +39,7 @@ export async function createStore(
 export async function setupTransaction(
   storeName: string,
 ): Promise<IDBPTransaction<unknown, [string]>> {
-  return db.transaction(storeName, WRITE_ACCESS);
+  return getDBInstance().transaction(storeName, WRITE_ACCESS);
 }
 
 /**
@@ -71,7 +67,7 @@ export async function find(
   storeName: string,
   id: string | number,
 ): Promise<unknown> {
-  return await db
+  return await getDBInstance()
     .transaction(storeName)
     .objectStore(storeName)
     .get(id);
@@ -118,13 +114,15 @@ export async function seed(): Promise<void> {
     throw new Error('Schema must be provided to initialize database!');
   }
 
-  db = await openDB(DB_NAME, VERSION, {
+  const db = await openDB(DB_NAME, VERSION, {
     upgrade(db) {
       (schema as any).forEach(
         async (store: Store) => await createStore(db, store),
       );
     },
   });
+
+  setDBInstance(db);
 
   (schema as any).forEach(({ storeName = '', data = [] }: Partial<Store>) =>
     data.forEach(async (item: object) => await add(storeName, item)),
