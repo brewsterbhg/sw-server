@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "start:example": "parcel build index.html && npx http-server dist -p 1234",
+    "build": "parcel build index.html",
     "test": "jest",
     "cz": "git-cz",
     "lint": "eslint --ext js,ts src",

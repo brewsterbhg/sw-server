@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <h1>Hello World</h1>
+    <button onclick="mockRequest()">Heck</button>
+    <script src="./src/db.ts" type="application/javascript"></script>
+    <script>
+      function mockRequest() {
+        fetch('/store1', {
+          method: 'POST', // *GET, POST, PUT, DELETE, etc.
+          headers: {
+            'Content-Type': 'application/json',
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: JSON.stringify({ test: 'test' }),
+        });
+      }
+    </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('./sw.js')
+            .then(registration => {
+              console.log(
+                'ServiceWorker registration successful with scope: ',
+                registration.scope,
+              );
+            })
+            .catch(err => {
+              console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
