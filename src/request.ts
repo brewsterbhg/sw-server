@@ -1,5 +1,5 @@
-import { add } from './db';
-import { METHOD_POST } from './constants/methods';
+import { add, find } from './db';
+import { METHOD_GET, METHOD_POST } from './constants/methods';
 
 import { PATH_DELIM, NO_OP } from './constants/request';
 
@@ -25,6 +25,17 @@ export function getResource(path: string): [string, string[]] {
 }
 
 /**
+ *
+ * @param {Object} request
+ */
+export async function handleGet(request: Request) {
+  const { pathname } = new URL(request.url);
+  const [entity, params] = getResource(pathname);
+
+  find(entity, params[0]);
+}
+
+/**
  * This function takes a POST request and handles adding the data
  *
  * @param {Object} request
@@ -37,7 +48,10 @@ export async function handlePost(request: Request): Promise<void> {
   add(entity, data);
 }
 
-const methods = new Map([[METHOD_POST, handlePost]]);
+const methods = new Map([
+  [METHOD_GET, handleGet],
+  [METHOD_POST, handlePost],
+]);
 
 /**
  * This function takes a request and calls the appropriate handler method
