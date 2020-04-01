@@ -25,14 +25,17 @@ export function getResource(path: string): [string, string[]] {
 }
 
 /**
+ * This function takes a GET request and handles returning the data
  *
  * @param {Object} request
+ * @returns {Promise<unknown>}
  */
-export async function handleGet(request: Request) {
+export async function handleGet(request: Request): Promise<unknown> {
   const { pathname } = new URL(request.url);
   const [entity, params] = getResource(pathname);
+  const item = await find(entity, params[0]);
 
-  find(entity, params[0]);
+  return item;
 }
 
 /**
@@ -45,6 +48,7 @@ export async function handlePost(request: Request): Promise<void> {
   const { pathname } = new URL(request.url);
   const [entity] = getResource(pathname);
   const data = await request.json();
+
   add(entity, data);
 }
 
