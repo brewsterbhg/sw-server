@@ -60,17 +60,11 @@ export async function getObjectStore(
  * Find a value in a store by id
  *
  * @param {string} storeName
- * @param {number} id
- * @returns {Promise<any>}
+ * @param {string} id
+ * @returns {Promise<unknown>}
  */
-export async function find(
-  storeName: string,
-  id: string | number,
-): Promise<unknown> {
-  return await getDBInstance()
-    .transaction(storeName)
-    .objectStore(storeName)
-    .get(id);
+export async function find(storeName: string, id: string): Promise<unknown> {
+  return await getDBInstance().get(storeName, parseInt(id));
 }
 
 /**

@@ -1,4 +1,11 @@
-import { createStore, setupTransaction, getObjectStore, find } from '../db';
+import {
+  createStore,
+  setupTransaction,
+  getObjectStore,
+  find,
+  add,
+  remove,
+} from '../db';
 import * as instance from '../instance';
 import { WRITE_ACCESS } from '../constants/db';
 
@@ -33,10 +40,7 @@ describe('db', () => {
       deleteObjectStore: jest.fn(),
       transaction: jest.fn().mockReturnValue({
         objectStore: jest.fn().mockReturnValue({
-          get: jest.fn().mockImplementation(id => {
-            const data = new Map([[42, 'test']]);
-            return data.get(id);
-          }),
+          get: jest.fn(),
           put: jest.fn(),
           delete: jest.fn(),
         }),
@@ -45,7 +49,10 @@ describe('db', () => {
       count: jest.fn(),
       countFromIndex: jest.fn(),
       delete: jest.fn(),
-      get: jest.fn(),
+      get: jest.fn().mockImplementation((_storeName, id) => {
+        const data = new Map([[42, 'test']]);
+        return data.get(id);
+      }),
       getFromIndex: jest.fn(),
       getAll: jest.fn(),
       getAllFromIndex: jest.fn(),
@@ -113,27 +120,47 @@ describe('db', () => {
 
   describe('find', () => {
     it('returns undefined if item is not found', () => {
-      const tx = mockedDB.transaction();
-      const objectStore = tx.objectStore();
-      const getSpy = jest.spyOn(objectStore, 'get');
+      const getSpy = jest.spyOn(mockedDB, 'get');
       const id = 1;
 
-      find(STORE_NAME, id);
+      find(STORE_NAME, id.toString());
 
-      expect(getSpy).toHaveBeenCalledWith(id);
+      expect(getSpy).toHaveBeenCalledWith(STORE_NAME, id);
       expect(getSpy).toReturnWith(undefined);
     });
 
     it('returns item if found', () => {
-      const tx = mockedDB.transaction();
-      const objectStore = tx.objectStore();
-      const getSpy = jest.spyOn(objectStore, 'get');
+      const getSpy = jest.spyOn(mockedDB, 'get');
       const id = 42;
 
-      find(STORE_NAME, id);
+      find(STORE_NAME, id.toString());
 
-      expect(getSpy).toHaveBeenCalledWith(id);
+      expect(getSpy).toHaveBeenCalledWith(STORE_NAME, id);
       expect(getSpy).toReturnWith('test');
     });
   });
+
+  // describe('add', () => {
+  //   it('calls the put method on the store', () => {
+  //     const putSpy = jest.spyOn(mockedDB.transaction().objectStore(), 'put');
+  //     const data = { test: 'test' };
+
+  //     add(STORE_NAME, data);
+
+  //     expect(putSpy).toHaveBeenCalledWith(data);
+  //   });
+  // });
+
+  // describe('remove', () => {
+  //   it('calls the delete method on the store', () => {
+  //     const tx = mockedDB.transaction();
+  //     const objectStore = tx.objectStore();
+  //     const deleteSpy = jest.spyOn(objectStore, 'delete');
+  //     const id = 42;
+
+  //     remove(STORE_NAME, id);
+
+  //     expect(deleteSpy).toHaveBeenCalledWith(id);
+  //   });
+  // });
 });
