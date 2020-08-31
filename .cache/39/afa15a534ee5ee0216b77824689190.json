@@ -1,0 +1,37 @@
+{
+  "id": "s8zH",
+  "dependencies": [
+    {
+      "name": "./../src/api.js",
+      "dynamic": true,
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/src/api.js",
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/example/index.html"
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583268466990
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1583332441389
+    },
+    {
+      "name": "./../sw.js",
+      "dynamic": true,
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/sw.js",
+      "entry": true,
+      "isolated": true,
+      "loc": { "line": 7, "column": 22 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/example/index.html"
+    }
+  ],
+  "generated": {
+    "html": "<html><body> <h1>Hello World</h1> <button onclick=\"e()\">Heck</button> <script src=\"/afdd2511fb930b6fb2fcdaf830f36288.js\" type=\"application/javascript\"></script>   <script>function e(){fetch(\"/users/1\")}\"serviceWorker\"in navigator&&window.addEventListener(\"load\",function(){navigator.serviceWorker.register(\"/968a9a3cab73cf600e8c7147f3b5f801.js\").then(function(e){console.log(\"ServiceWorker registration successful with scope: \",e.scope)}).catch(function(e){console.log(\"ServiceWorker registration failed: \",e)})});</script> </body></html>"
+  },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "7d828663b2f9e3b2781397b802b0161d",
+  "cacheData": { "env": {} }
+}

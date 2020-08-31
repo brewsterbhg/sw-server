@@ -2,15 +2,14 @@
   <body>
     <h1>Hello World</h1>
     <button onclick="mockRequest()">Heck</button>
-    <script src="./src/db.ts" type="application/javascript"></script>
+    <script src="/db.cc130e9d.js" type="application/javascript"></script>
     <script>
       function mockRequest() {
         fetch('/store1/1', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
-          },
-          // body: JSON.stringify({ test: 'test' }),
+          }, // body: JSON.stringify({ test: 'test' }),
         });
       }
     </script>
@@ -18,7 +17,7 @@
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker
-            .register('./sw.js')
+            .register('/sw.js')
             .then(registration => {
               console.log(
                 'ServiceWorker registration successful with scope: ',

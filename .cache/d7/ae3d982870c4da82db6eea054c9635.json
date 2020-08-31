@@ -1,0 +1,37 @@
+{
+  "id": "index.html",
+  "dependencies": [
+    {
+      "name": "./src/db.ts",
+      "dynamic": true,
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/src/db.ts",
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/index.html"
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583807233410
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1584578109733
+    },
+    {
+      "name": "./sw.js",
+      "dynamic": true,
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/sw.js",
+      "entry": true,
+      "isolated": true,
+      "loc": { "line": 4, "column": 20 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/index.html"
+    }
+  ],
+  "generated": {
+    "html": "<html>\n\n<body>\n  <h1>Hello World</h1>\n  <button onclick=\"mockRequest()\">Heck</button>\n  <script src=\"/23b3240402e5eed7069dad43cc130e9d.js\" type=\"application/javascript\"></script>\n  <script>function mockRequest() {\n  fetch('/store1/1', {\n    method: 'GET',\n    headers: {\n      'Content-Type': 'application/json'\n    } // body: JSON.stringify({ test: 'test' }),\n\n  });\n}</script>\n  <script>if ('serviceWorker' in navigator) {\n  window.addEventListener('load', () => {\n    navigator.serviceWorker.register(\"/36a6321ccec60e74fcb19c8b57d29b8d.js\").then(registration => {\n      console.log('ServiceWorker registration successful with scope: ', registration.scope);\n    }).catch(err => {\n      console.log('ServiceWorker registration failed: ', err);\n    });\n  });\n}</script>\n</body>\n\n</html>"
+  },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "e821e5d1cbbdbaae43a0405477a6bb93",
+  "cacheData": { "env": {} }
+}

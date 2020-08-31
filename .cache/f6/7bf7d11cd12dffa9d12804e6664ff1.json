@@ -1,0 +1,114 @@
+{
+  "id": "src/constants/request.ts",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/tsconfig.json",
+      "includedInParent": true,
+      "mtime": 1583964138497
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583807233410
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1584578109733
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.NO_OP = exports.PATH_DELIM = void 0;\nvar PATH_DELIM = '/';\nexports.PATH_DELIM = PATH_DELIM;\n\nvar NO_OP = function () {\n  null;\n};\n\nexports.NO_OP = NO_OP;"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 7, "column": 0 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 1, "column": 13 },
+          "generated": { "line": 7, "column": 4 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 1, "column": 23 },
+          "generated": { "line": 7, "column": 14 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 1, "column": 26 },
+          "generated": { "line": 7, "column": 17 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 7, "column": 20 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 2, "column": 7 },
+          "generated": { "line": 10, "column": 0 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 2, "column": 13 },
+          "generated": { "line": 10, "column": 4 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 2, "column": 18 },
+          "generated": { "line": 10, "column": 9 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 2, "column": 21 },
+          "generated": { "line": 10, "column": 12 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 2, "column": 21 },
+          "generated": { "line": 10, "column": 24 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 3, "column": 2 },
+          "generated": { "line": 11, "column": 0 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 4, "column": 1 },
+          "generated": { "line": 12, "column": 0 }
+        },
+        {
+          "source": "src/constants/request.ts",
+          "name": null,
+          "original": { "line": 2, "column": 7 },
+          "generated": { "line": 12, "column": 1 }
+        }
+      ],
+      "sources": {
+        "src/constants/request.ts": "export const PATH_DELIM = '/';\nexport const NO_OP = (): void => {\n  null;\n};\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "8cab262b9227f837f913b375215c20b4",
+  "cacheData": { "env": {} }
+}

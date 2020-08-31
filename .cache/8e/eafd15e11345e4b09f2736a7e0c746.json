@@ -1,0 +1,37 @@
+{
+  "id": "index.html",
+  "dependencies": [
+    {
+      "name": "./../src/api.js",
+      "dynamic": true,
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/src/api.js",
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/example/index.html"
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583268466990
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1583332441389
+    },
+    {
+      "name": "./../sw.js",
+      "dynamic": true,
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/sw.js",
+      "entry": true,
+      "isolated": true,
+      "loc": { "line": 4, "column": 22 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/example/index.html"
+    }
+  ],
+  "generated": {
+    "html": "<html>\n  <body>\n    <h1>Hello World</h1>\n    <button onclick=\"e()\">Heck</button>\n    <script src=\"/afdd2511fb930b6fb2fcdaf830f36288.js\" type=\"application/javascript\"></script>\n    <!-- <script src=\"index.js\" type=\"application/javascript\"></script> -->\n    <script>function mockRequest() {\n  fetch('/users/1');\n}</script>\n    <script>if ('serviceWorker' in navigator) {\n  window.addEventListener('load', () => {\n    navigator.serviceWorker.register(\"/968a9a3cab73cf600e8c7147f3b5f801.js\").then(registration => {\n      console.log('ServiceWorker registration successful with scope: ', registration.scope);\n    }).catch(err => {\n      console.log('ServiceWorker registration failed: ', err);\n    });\n  });\n}</script>\n  </body>\n</html>\n"
+  },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "6c70d88124adfbe46c0c106a4577cbfc",
+  "cacheData": { "env": {} }
+}

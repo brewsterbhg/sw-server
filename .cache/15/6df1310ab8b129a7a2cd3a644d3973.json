@@ -1,0 +1,480 @@
+{
+  "id": "../serviceworker.js",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583268466990
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1583288702593
+    },
+    {
+      "name": "./src/api.js",
+      "loc": { "line": 1, "column": 37 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/serviceworker.js",
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/src/api.js"
+    },
+    {
+      "name": "./src/request.js",
+      "loc": { "line": 2, "column": 34 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/serviceworker.js",
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/src/request.js"
+    }
+  ],
+  "generated": {
+    "js": "const {\n  initDB,\n  seedData\n} = require('./src/api.js');\n\nconst {\n  handleRequest\n} = require('./src/request.js');\n\nself.addEventListener('install', function (event) {});\nself.addEventListener('activate', async function (event) {\n  await initDB();\n  await seedData();\n});\nself.addEventListener('fetch', async event => {\n  console.log(event);\n  handleRequest(event.request);\n});"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "generated": { "line": 1, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 1, "column": 6 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 6 }
+        },
+        {
+          "name": "initDB",
+          "generated": { "line": 2, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 8 }
+        },
+        {
+          "name": "initDB",
+          "generated": { "line": 2, "column": 2 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 8 }
+        },
+        {
+          "generated": { "line": 2, "column": 8 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 6 }
+        },
+        {
+          "name": "seedData",
+          "generated": { "line": 3, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 16 }
+        },
+        {
+          "name": "seedData",
+          "generated": { "line": 3, "column": 2 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 16 }
+        },
+        {
+          "generated": { "line": 4, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 6 }
+        },
+        {
+          "name": "require",
+          "generated": { "line": 4, "column": 4 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 29 }
+        },
+        {
+          "generated": { "line": 4, "column": 11 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 36 }
+        },
+        {
+          "generated": { "line": 4, "column": 12 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 37 }
+        },
+        {
+          "generated": { "line": 4, "column": 26 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 36 }
+        },
+        {
+          "generated": { "line": 4, "column": 27 },
+          "source": "../serviceworker.js",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 6, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 2, "column": 0 }
+        },
+        {
+          "generated": { "line": 6, "column": 6 },
+          "source": "../serviceworker.js",
+          "original": { "line": 2, "column": 6 }
+        },
+        {
+          "name": "handleRequest",
+          "generated": { "line": 7, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 2, "column": 8 }
+        },
+        {
+          "name": "handleRequest",
+          "generated": { "line": 7, "column": 2 },
+          "source": "../serviceworker.js",
+          "original": { "line": 2, "column": 8 }
+        },
+        {
+          "generated": { "line": 8, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 2, "column": 6 }
+        },
+        {
+          "name": "require",
+          "generated": { "line": 8, "column": 4 },
+          "source": "../serviceworker.js",
+          "original": { "line": 2, "column": 26 }
+        },
+        {
+          "generated": { "line": 8, "column": 11 },
+          "source": "../serviceworker.js",
+          "original": { "line": 2, "column": 33 }
+        },
+        {
+          "generated": { "line": 8, "column": 12 },
+          "source": "../serviceworker.js",
+          "original": { "line": 2, "column": 34 }
+        },
+        {
+          "generated": { "line": 8, "column": 30 },
+          "source": "../serviceworker.js",
+          "original": { "line": 2, "column": 33 }
+        },
+        {
+          "generated": { "line": 8, "column": 31 },
+          "source": "../serviceworker.js",
+          "original": { "line": 2, "column": 0 }
+        },
+        {
+          "name": "self",
+          "generated": { "line": 10, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "generated": { "line": 10, "column": 4 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 4 }
+        },
+        {
+          "name": "addEventListener",
+          "generated": { "line": 10, "column": 5 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 5 }
+        },
+        {
+          "generated": { "line": 10, "column": 21 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "generated": { "line": 10, "column": 22 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 22 }
+        },
+        {
+          "generated": { "line": 10, "column": 31 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "generated": { "line": 10, "column": 33 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 33 }
+        },
+        {
+          "name": "event",
+          "generated": { "line": 10, "column": 43 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 42 }
+        },
+        {
+          "generated": { "line": 10, "column": 48 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 33 }
+        },
+        {
+          "generated": { "line": 10, "column": 50 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 49 }
+        },
+        {
+          "generated": { "line": 10, "column": 51 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 51 }
+        },
+        {
+          "generated": { "line": 10, "column": 52 },
+          "source": "../serviceworker.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "name": "self",
+          "generated": { "line": 11, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "generated": { "line": 11, "column": 4 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 4 }
+        },
+        {
+          "name": "addEventListener",
+          "generated": { "line": 11, "column": 5 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 5 }
+        },
+        {
+          "generated": { "line": 11, "column": 21 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "generated": { "line": 11, "column": 22 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 22 }
+        },
+        {
+          "generated": { "line": 11, "column": 32 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "generated": { "line": 11, "column": 34 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 34 }
+        },
+        {
+          "name": "event",
+          "generated": { "line": 11, "column": 50 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 49 }
+        },
+        {
+          "generated": { "line": 11, "column": 55 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 34 }
+        },
+        {
+          "generated": { "line": 11, "column": 57 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 56 }
+        },
+        {
+          "generated": { "line": 12, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 7, "column": 2 }
+        },
+        {
+          "name": "initDB",
+          "generated": { "line": 12, "column": 8 },
+          "source": "../serviceworker.js",
+          "original": { "line": 7, "column": 8 }
+        },
+        {
+          "generated": { "line": 12, "column": 14 },
+          "source": "../serviceworker.js",
+          "original": { "line": 7, "column": 14 }
+        },
+        {
+          "generated": { "line": 12, "column": 16 },
+          "source": "../serviceworker.js",
+          "original": { "line": 7, "column": 2 }
+        },
+        {
+          "generated": { "line": 13, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 8, "column": 2 }
+        },
+        {
+          "name": "seedData",
+          "generated": { "line": 13, "column": 8 },
+          "source": "../serviceworker.js",
+          "original": { "line": 8, "column": 8 }
+        },
+        {
+          "generated": { "line": 13, "column": 16 },
+          "source": "../serviceworker.js",
+          "original": { "line": 8, "column": 16 }
+        },
+        {
+          "generated": { "line": 13, "column": 18 },
+          "source": "../serviceworker.js",
+          "original": { "line": 8, "column": 2 }
+        },
+        {
+          "generated": { "line": 14, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 9, "column": 1 }
+        },
+        {
+          "generated": { "line": 14, "column": 1 },
+          "source": "../serviceworker.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "name": "self",
+          "generated": { "line": 15, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 0 }
+        },
+        {
+          "generated": { "line": 15, "column": 4 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 4 }
+        },
+        {
+          "name": "addEventListener",
+          "generated": { "line": 15, "column": 5 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 5 }
+        },
+        {
+          "generated": { "line": 15, "column": 21 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 0 }
+        },
+        {
+          "generated": { "line": 15, "column": 22 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 22 }
+        },
+        {
+          "generated": { "line": 15, "column": 29 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 0 }
+        },
+        {
+          "generated": { "line": 15, "column": 31 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 31 }
+        },
+        {
+          "name": "event",
+          "generated": { "line": 15, "column": 37 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 37 }
+        },
+        {
+          "generated": { "line": 15, "column": 42 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 31 }
+        },
+        {
+          "generated": { "line": 15, "column": 46 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 46 }
+        },
+        {
+          "name": "console",
+          "generated": { "line": 16, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 12, "column": 2 }
+        },
+        {
+          "name": "console",
+          "generated": { "line": 16, "column": 2 },
+          "source": "../serviceworker.js",
+          "original": { "line": 12, "column": 2 }
+        },
+        {
+          "generated": { "line": 16, "column": 9 },
+          "source": "../serviceworker.js",
+          "original": { "line": 12, "column": 9 }
+        },
+        {
+          "name": "log",
+          "generated": { "line": 16, "column": 10 },
+          "source": "../serviceworker.js",
+          "original": { "line": 12, "column": 10 }
+        },
+        {
+          "generated": { "line": 16, "column": 13 },
+          "source": "../serviceworker.js",
+          "original": { "line": 12, "column": 2 }
+        },
+        {
+          "name": "event",
+          "generated": { "line": 16, "column": 14 },
+          "source": "../serviceworker.js",
+          "original": { "line": 12, "column": 14 }
+        },
+        {
+          "generated": { "line": 16, "column": 19 },
+          "source": "../serviceworker.js",
+          "original": { "line": 12, "column": 2 }
+        },
+        {
+          "name": "handleRequest",
+          "generated": { "line": 17, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 13, "column": 2 }
+        },
+        {
+          "name": "handleRequest",
+          "generated": { "line": 17, "column": 2 },
+          "source": "../serviceworker.js",
+          "original": { "line": 13, "column": 2 }
+        },
+        {
+          "generated": { "line": 17, "column": 15 },
+          "source": "../serviceworker.js",
+          "original": { "line": 13, "column": 15 }
+        },
+        {
+          "name": "event",
+          "generated": { "line": 17, "column": 16 },
+          "source": "../serviceworker.js",
+          "original": { "line": 13, "column": 16 }
+        },
+        {
+          "generated": { "line": 17, "column": 21 },
+          "source": "../serviceworker.js",
+          "original": { "line": 13, "column": 21 }
+        },
+        {
+          "name": "request",
+          "generated": { "line": 17, "column": 22 },
+          "source": "../serviceworker.js",
+          "original": { "line": 13, "column": 22 }
+        },
+        {
+          "generated": { "line": 17, "column": 29 },
+          "source": "../serviceworker.js",
+          "original": { "line": 13, "column": 15 }
+        },
+        {
+          "generated": { "line": 17, "column": 30 },
+          "source": "../serviceworker.js",
+          "original": { "line": 13, "column": 2 }
+        },
+        {
+          "generated": { "line": 18, "column": 0 },
+          "source": "../serviceworker.js",
+          "original": { "line": 14, "column": 1 }
+        },
+        {
+          "generated": { "line": 18, "column": 1 },
+          "source": "../serviceworker.js",
+          "original": { "line": 11, "column": 0 }
+        }
+      ],
+      "sources": {
+        "../serviceworker.js": "const { initDB, seedData } = require('./src/api.js');\nconst { handleRequest } = require('./src/request.js');\n\nself.addEventListener('install', function(event) {});\n\nself.addEventListener('activate', async function(event) {\n  await initDB();\n  await seedData();\n});\n\nself.addEventListener('fetch', async event => {\n  console.log(event);\n  handleRequest(event.request);\n});\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "59d2a184494646c892cc52be52c96ffb",
+  "cacheData": { "env": {} }
+}

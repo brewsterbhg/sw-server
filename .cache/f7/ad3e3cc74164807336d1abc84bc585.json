@@ -1,0 +1,1105 @@
+{
+  "id": "loqa",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583268466990
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1583332441389
+    },
+    {
+      "name": "./src/api.js",
+      "loc": { "line": 1, "column": 37 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/sw.js",
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/src/api.js"
+    },
+    {
+      "name": "./src/request.js",
+      "loc": { "line": 2, "column": 34 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/sw.js",
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/src/request.js"
+    }
+  ],
+  "generated": {
+    "js": "function e(e,n,r,t,i,u,a){try{var o=e[u](a),s=o.value}catch(c){return void r(c)}o.done?n(s):Promise.resolve(s).then(t,i)}function n(n){return function(){var r=this,t=arguments;return new Promise(function(i,u){var a=n.apply(r,t);function o(n){e(a,i,u,o,s,\"next\",n)}function s(n){e(a,i,u,o,s,\"throw\",n)}o(void 0)})}}var r=require(\"./src/api.js\"),t=r.initDB,i=r.seedData,u=require(\"./src/request.js\"),a=u.handleRequest;self.addEventListener(\"install\",function(e){console.log(\"SW INSTALLED\")}),self.addEventListener(\"activate\",function(){var e=n(regeneratorRuntime.mark(function e(n){return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,t();case 2:return e.next=4,i();case 4:case\"end\":return e.stop()}},e)}));return function(n){return e.apply(this,arguments)}}()),self.addEventListener(\"fetch\",function(){var e=n(regeneratorRuntime.mark(function e(n){return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:console.log(n),a(n.request);case 2:case\"end\":return e.stop()}},e)}));return function(n){return e.apply(this,arguments)}}());"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 0 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 9 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 11 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 13 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 15 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 17 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 19 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 21 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 23 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 26 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 30 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 34 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 36 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 38 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 41 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 44 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 46 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 48 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 54 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 60 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 63 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 75 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 77 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 80 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 82 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 87 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 89 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 92 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 100 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 108 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 111 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 116 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 118 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 121 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 130 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 132 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 135 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 142 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 153 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 157 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 159 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 164 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 166 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 176 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 183 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 187 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 195 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 204 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 206 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 209 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 213 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 215 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 217 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 223 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 225 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 228 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 237 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 239 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 242 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 244 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 246 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 248 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 250 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 252 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 254 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 261 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 264 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 273 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 275 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 278 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 280 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 282 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 284 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 286 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 288 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 290 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 298 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 301 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 308 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "require",
+          "original": { "line": 1, "column": 29 },
+          "generated": { "line": 1, "column": 314 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "require",
+          "original": { "line": 1, "column": 29 },
+          "generated": { "line": 1, "column": 318 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "require",
+          "original": { "line": 1, "column": 29 },
+          "generated": { "line": 1, "column": 320 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 1, "column": 37 },
+          "generated": { "line": 1, "column": 328 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "initDB",
+          "original": { "line": 1, "column": 8 },
+          "generated": { "line": 1, "column": 344 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "initDB",
+          "original": { "line": 1, "column": 8 },
+          "generated": { "line": 1, "column": 346 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "initDB",
+          "original": { "line": 1, "column": 8 },
+          "generated": { "line": 1, "column": 348 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "seedData",
+          "original": { "line": 1, "column": 16 },
+          "generated": { "line": 1, "column": 355 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "seedData",
+          "original": { "line": 1, "column": 16 },
+          "generated": { "line": 1, "column": 357 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "seedData",
+          "original": { "line": 1, "column": 16 },
+          "generated": { "line": 1, "column": 359 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "require",
+          "original": { "line": 2, "column": 26 },
+          "generated": { "line": 1, "column": 368 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "require",
+          "original": { "line": 2, "column": 26 },
+          "generated": { "line": 1, "column": 370 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 2, "column": 34 },
+          "generated": { "line": 1, "column": 378 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "handleRequest",
+          "original": { "line": 2, "column": 8 },
+          "generated": { "line": 1, "column": 398 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "handleRequest",
+          "original": { "line": 2, "column": 8 },
+          "generated": { "line": 1, "column": 400 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "handleRequest",
+          "original": { "line": 2, "column": 8 },
+          "generated": { "line": 1, "column": 402 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "self",
+          "original": { "line": 4, "column": 0 },
+          "generated": { "line": 1, "column": 416 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "addEventListener",
+          "original": { "line": 4, "column": 5 },
+          "generated": { "line": 1, "column": 421 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 4, "column": 22 },
+          "generated": { "line": 1, "column": 438 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 4, "column": 33 },
+          "generated": { "line": 1, "column": 448 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "event",
+          "original": { "line": 4, "column": 42 },
+          "generated": { "line": 1, "column": 457 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "console",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 460 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "log",
+          "original": { "line": 5, "column": 10 },
+          "generated": { "line": 1, "column": 468 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 5, "column": 14 },
+          "generated": { "line": 1, "column": 472 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "self",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 490 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "addEventListener",
+          "original": { "line": 8, "column": 5 },
+          "generated": { "line": 1, "column": 495 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 22 },
+          "generated": { "line": 1, "column": 512 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 523 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 534 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 538 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 540 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 542 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 561 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 566 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "event",
+          "original": { "line": 8, "column": 49 },
+          "generated": { "line": 1, "column": 575 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "event",
+          "original": { "line": 8, "column": 49 },
+          "generated": { "line": 1, "column": 577 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 580 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 587 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 606 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 611 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 620 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 623 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 630 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 637 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 639 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 644 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 646 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 652 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 657 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "initDB",
+          "original": { "line": 9, "column": 8 },
+          "generated": { "line": 1, "column": 659 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 666 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 668 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 673 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "initDB",
+          "original": { "line": 9, "column": 8 },
+          "generated": { "line": 1, "column": 675 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 679 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 684 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "seedData",
+          "original": { "line": 10, "column": 8 },
+          "generated": { "line": 1, "column": 686 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 693 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 695 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 700 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "seedData",
+          "original": { "line": 10, "column": 8 },
+          "generated": { "line": 1, "column": 702 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 706 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 711 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 713 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 717 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 723 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 730 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 732 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 34 },
+          "generated": { "line": 1, "column": 741 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 747 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 754 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 763 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 766 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 773 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 775 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 781 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 786 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 1, "column": 798 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "self",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 802 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "addEventListener",
+          "original": { "line": 13, "column": 5 },
+          "generated": { "line": 1, "column": 807 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 22 },
+          "generated": { "line": 1, "column": 824 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 832 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 843 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 847 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 849 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 851 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 870 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 875 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "event",
+          "original": { "line": 13, "column": 37 },
+          "generated": { "line": 1, "column": 884 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "event",
+          "original": { "line": 13, "column": 37 },
+          "generated": { "line": 1, "column": 886 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 889 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 896 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 915 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 920 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 929 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 932 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 939 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 946 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 948 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 953 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 955 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 961 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 966 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "console",
+          "original": { "line": 14, "column": 2 },
+          "generated": { "line": 1, "column": 968 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "log",
+          "original": { "line": 14, "column": 10 },
+          "generated": { "line": 1, "column": 976 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "event",
+          "original": { "line": 14, "column": 14 },
+          "generated": { "line": 1, "column": 980 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "handleRequest",
+          "original": { "line": 15, "column": 2 },
+          "generated": { "line": 1, "column": 983 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "event",
+          "original": { "line": 15, "column": 16 },
+          "generated": { "line": 1, "column": 985 }
+        },
+        {
+          "source": "../sw.js",
+          "name": "request",
+          "original": { "line": 15, "column": 22 },
+          "generated": { "line": 1, "column": 987 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 996 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 1001 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 1003 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 1007 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 1013 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 1020 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 1022 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 31 },
+          "generated": { "line": 1, "column": 1031 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 1037 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 1044 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 1053 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 1056 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 1063 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 1065 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 1071 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 1076 }
+        },
+        {
+          "source": "../sw.js",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 1, "column": 1088 }
+        }
+      ],
+      "sources": {
+        "../sw.js": "const { initDB, seedData } = require('./src/api.js');\nconst { handleRequest } = require('./src/request.js');\n\nself.addEventListener('install', function(event) {\n  console.log('SW INSTALLED');\n});\n\nself.addEventListener('activate', async function(event) {\n  await initDB();\n  await seedData();\n});\n\nself.addEventListener('fetch', async event => {\n  console.log(event);\n  handleRequest(event.request);\n});\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "85b23a26dcf8ad47b2c02379f7aba618",
+  "cacheData": { "env": {} }
+}

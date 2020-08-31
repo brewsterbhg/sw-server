@@ -1,0 +1,37 @@
+{
+  "id": "index.html",
+  "dependencies": [
+    {
+      "name": "./../api.js",
+      "dynamic": true,
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/src/api.js",
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/src/example/index.html"
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583268466990
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1583331613577
+    },
+    {
+      "name": "./../../sw.js",
+      "dynamic": true,
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/sw.js",
+      "entry": true,
+      "isolated": true,
+      "loc": { "line": 4, "column": 22 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/src/example/index.html"
+    }
+  ],
+  "generated": {
+    "html": "<html>\n  <head> </head>\n  <body>\n    <h1>Hello World</h1>\n    <button onclick=\"mockRequest()\">Heck</button>\n    <script src=\"/dbaf4b7ecee6409fd1d520efa06484e5.js\" type=\"application/javascript\"></script>\n    <script>if ('serviceWorker' in navigator) {\n  window.addEventListener('load', () => {\n    navigator.serviceWorker.register(\"/ccabcbcc9283ee267fb036b2b6aea0c5.js\").then(registration => {\n      console.log('ServiceWorker registration successful with scope: ', registration.scope);\n    }).catch(err => {\n      console.log('ServiceWorker registration failed: ', err);\n    });\n  });\n}</script>\n  </body>\n</html>\n"
+  },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "6572dfc0999438dcceaaee43f6d30397",
+  "cacheData": { "env": {} }
+}

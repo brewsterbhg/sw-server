@@ -1,0 +1,95 @@
+{
+  "id": "index.js",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583268466990
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1583332245542
+    },
+    {
+      "name": "axios",
+      "loc": { "line": 1, "column": 18 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/example/index.js",
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/node_modules/axios/index.js"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.mockRequest = mockRequest;\n\nvar _axios = _interopRequireDefault(require(\"axios\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction mockRequest() {\n  _axios.default.get('/users/1');\n}"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "generated": { "line": 8, "column": 0 },
+          "source": "index.js",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 12, "column": 0 },
+          "source": "index.js",
+          "original": { "line": 3, "column": 7 }
+        },
+        {
+          "name": "mockRequest",
+          "generated": { "line": 12, "column": 9 },
+          "source": "index.js",
+          "original": { "line": 3, "column": 16 }
+        },
+        {
+          "generated": { "line": 12, "column": 20 },
+          "source": "index.js",
+          "original": { "line": 3, "column": 7 }
+        },
+        {
+          "generated": { "line": 12, "column": 23 },
+          "source": "index.js",
+          "original": { "line": 3, "column": 30 }
+        },
+        {
+          "name": "axios",
+          "generated": { "line": 13, "column": 0 },
+          "source": "index.js",
+          "original": { "line": 4, "column": 2 }
+        },
+        {
+          "name": "get",
+          "generated": { "line": 13, "column": 17 },
+          "source": "index.js",
+          "original": { "line": 4, "column": 8 }
+        },
+        {
+          "generated": { "line": 13, "column": 20 },
+          "source": "index.js",
+          "original": { "line": 4, "column": 2 }
+        },
+        {
+          "generated": { "line": 13, "column": 21 },
+          "source": "index.js",
+          "original": { "line": 4, "column": 12 }
+        },
+        {
+          "generated": { "line": 13, "column": 31 },
+          "source": "index.js",
+          "original": { "line": 4, "column": 2 }
+        },
+        {
+          "generated": { "line": 14, "column": 0 },
+          "source": "index.js",
+          "original": { "line": 5, "column": 1 }
+        }
+      ],
+      "sources": {
+        "index.js": "import axios from 'axios';\n\nexport function mockRequest() {\n  axios.get('/users/1');\n}\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "34d7e4da0f53c2da8b5b2787cea64124",
+  "cacheData": { "env": {} }
+}

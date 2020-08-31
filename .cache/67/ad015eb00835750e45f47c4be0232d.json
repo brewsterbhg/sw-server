@@ -1,0 +1,173 @@
+{
+  "id": "schema/schema.json",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583268466990
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1583332441389
+    }
+  ],
+  "generated": {
+    "js": "module.exports = {\n  \"schema\": [{\n    \"storeName\": \"store1\",\n    \"autoIncrement\": \"true\",\n    \"keyPath\": \"id\",\n    \"data\": [{\n      \"foo\": \"bar\"\n    }]\n  }]\n};"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "name": "module",
+          "generated": { "line": 1, "column": 0 },
+          "source": "schema/schema.json",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 1, "column": 6 },
+          "source": "schema/schema.json",
+          "original": { "line": 1, "column": 6 }
+        },
+        {
+          "name": "exports",
+          "generated": { "line": 1, "column": 7 },
+          "source": "schema/schema.json",
+          "original": { "line": 1, "column": 7 }
+        },
+        {
+          "generated": { "line": 1, "column": 14 },
+          "source": "schema/schema.json",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 1, "column": 17 },
+          "source": "schema/schema.json",
+          "original": { "line": 1, "column": 17 }
+        },
+        {
+          "generated": { "line": 2, "column": 0 },
+          "source": "schema/schema.json",
+          "original": { "line": 2, "column": 2 }
+        },
+        {
+          "generated": { "line": 2, "column": 12 },
+          "source": "schema/schema.json",
+          "original": { "line": 2, "column": 12 }
+        },
+        {
+          "generated": { "line": 2, "column": 13 },
+          "source": "schema/schema.json",
+          "original": { "line": 3, "column": 4 }
+        },
+        {
+          "generated": { "line": 3, "column": 0 },
+          "source": "schema/schema.json",
+          "original": { "line": 4, "column": 6 }
+        },
+        {
+          "generated": { "line": 3, "column": 17 },
+          "source": "schema/schema.json",
+          "original": { "line": 4, "column": 19 }
+        },
+        {
+          "generated": { "line": 3, "column": 25 },
+          "source": "schema/schema.json",
+          "original": { "line": 3, "column": 4 }
+        },
+        {
+          "generated": { "line": 4, "column": 0 },
+          "source": "schema/schema.json",
+          "original": { "line": 5, "column": 6 }
+        },
+        {
+          "generated": { "line": 4, "column": 21 },
+          "source": "schema/schema.json",
+          "original": { "line": 5, "column": 23 }
+        },
+        {
+          "generated": { "line": 4, "column": 27 },
+          "source": "schema/schema.json",
+          "original": { "line": 3, "column": 4 }
+        },
+        {
+          "generated": { "line": 5, "column": 0 },
+          "source": "schema/schema.json",
+          "original": { "line": 6, "column": 6 }
+        },
+        {
+          "generated": { "line": 5, "column": 15 },
+          "source": "schema/schema.json",
+          "original": { "line": 6, "column": 17 }
+        },
+        {
+          "generated": { "line": 5, "column": 19 },
+          "source": "schema/schema.json",
+          "original": { "line": 3, "column": 4 }
+        },
+        {
+          "generated": { "line": 6, "column": 0 },
+          "source": "schema/schema.json",
+          "original": { "line": 7, "column": 6 }
+        },
+        {
+          "generated": { "line": 6, "column": 12 },
+          "source": "schema/schema.json",
+          "original": { "line": 7, "column": 14 }
+        },
+        {
+          "generated": { "line": 6, "column": 13 },
+          "source": "schema/schema.json",
+          "original": { "line": 8, "column": 8 }
+        },
+        {
+          "generated": { "line": 7, "column": 0 },
+          "source": "schema/schema.json",
+          "original": { "line": 9, "column": 10 }
+        },
+        {
+          "generated": { "line": 7, "column": 13 },
+          "source": "schema/schema.json",
+          "original": { "line": 9, "column": 17 }
+        },
+        {
+          "generated": { "line": 8, "column": 0 },
+          "source": "schema/schema.json",
+          "original": { "line": 8, "column": 8 }
+        },
+        {
+          "generated": { "line": 8, "column": 5 },
+          "source": "schema/schema.json",
+          "original": { "line": 7, "column": 14 }
+        },
+        {
+          "generated": { "line": 9, "column": 0 },
+          "source": "schema/schema.json",
+          "original": { "line": 3, "column": 4 }
+        },
+        {
+          "generated": { "line": 9, "column": 3 },
+          "source": "schema/schema.json",
+          "original": { "line": 2, "column": 12 }
+        },
+        {
+          "generated": { "line": 10, "column": 0 },
+          "source": "schema/schema.json",
+          "original": { "line": 1, "column": 17 }
+        },
+        {
+          "generated": { "line": 10, "column": 1 },
+          "source": "schema/schema.json",
+          "original": { "line": 1, "column": 0 }
+        }
+      ],
+      "sources": {
+        "schema/schema.json": "module.exports = {\n  \"schema\": [\n    {\n      \"storeName\": \"store1\",\n      \"autoIncrement\": \"true\",\n      \"keyPath\": \"id\",\n      \"data\": [\n        {\n          \"foo\": \"bar\"\n        }\n      ]\n    }\n  ]\n}\n;"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "8a8e2b2f90e15dc2febe85d8ca769957",
+  "cacheData": { "env": {} }
+}

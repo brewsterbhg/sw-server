@@ -1,0 +1,714 @@
+{
+  "id": "bWmS",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583268466990
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1583332441389
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";function e(e,n,t,r,o,u,i){try{var c=e[u](i),s=c.value}catch(a){return void t(a)}c.done?n(s):Promise.resolve(s).then(r,o)}function n(n){return function(){var t=this,r=arguments;return new Promise(function(o,u){var i=n.apply(t,r);function c(n){e(i,o,u,c,s,\"next\",n)}function s(n){e(i,o,u,c,s,\"throw\",n)}c(void 0)})}}function t(e){return r.apply(this,arguments)}function r(){return(r=n(regeneratorRuntime.mark(function e(n){return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:console.log(n);case 1:case\"end\":return e.stop()}},e)}))).apply(this,arguments)}Object.defineProperty(exports,\"__esModule\",{value:!0}),exports.handleRequest=t;"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 0 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 13 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 22 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 24 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 26 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 28 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 30 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 32 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 34 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 36 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 39 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 43 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 47 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 49 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 51 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 54 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 57 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 59 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 61 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 67 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 73 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 76 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 88 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 90 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 93 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 95 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 100 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 102 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 105 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 113 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 121 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 124 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 129 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 131 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 134 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 143 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 145 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 148 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 155 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 166 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 170 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 172 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 177 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 179 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 189 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 196 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 200 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 208 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 217 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 219 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 222 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 226 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 228 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 230 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 236 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 238 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 241 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 250 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 252 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 255 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 257 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 259 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 261 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 263 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 265 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 267 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 274 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 277 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 286 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 288 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 291 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 293 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 295 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 297 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 299 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 301 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 303 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 311 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 314 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 321 }
+        },
+        {
+          "source": "../src/request.js",
+          "name": "handleRequest",
+          "original": { "line": 1, "column": 22 },
+          "generated": { "line": 1, "column": 327 }
+        },
+        {
+          "source": "../src/request.js",
+          "name": "handleRequest",
+          "original": { "line": 1, "column": 22 },
+          "generated": { "line": 1, "column": 336 }
+        },
+        {
+          "source": "../src/request.js",
+          "name": "handleRequest",
+          "original": { "line": 1, "column": 22 },
+          "generated": { "line": 1, "column": 338 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 341 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 348 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 350 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 356 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 361 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 372 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 381 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 385 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 392 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 394 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 396 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 415 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 420 }
+        },
+        {
+          "source": "../src/request.js",
+          "name": "request",
+          "original": { "line": 1, "column": 36 },
+          "generated": { "line": 1, "column": 429 }
+        },
+        {
+          "source": "../src/request.js",
+          "name": "request",
+          "original": { "line": 1, "column": 36 },
+          "generated": { "line": 1, "column": 431 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 434 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 441 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 460 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 465 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 474 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 477 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 484 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 491 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 493 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 498 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 500 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 506 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 511 }
+        },
+        {
+          "source": "../src/request.js",
+          "name": "console",
+          "original": { "line": 2, "column": 2 },
+          "generated": { "line": 1, "column": 513 }
+        },
+        {
+          "source": "../src/request.js",
+          "name": "log",
+          "original": { "line": 2, "column": 10 },
+          "generated": { "line": 1, "column": 521 }
+        },
+        {
+          "source": "../src/request.js",
+          "name": "request",
+          "original": { "line": 2, "column": 14 },
+          "generated": { "line": 1, "column": 525 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 528 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 533 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 535 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 539 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 545 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 552 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 554 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 563 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 570 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 576 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 581 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 592 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 599 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 614 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 622 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 635 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 636 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 643 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 647 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 655 }
+        },
+        {
+          "source": "../src/request.js",
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 1, "column": 669 }
+        }
+      ],
+      "sources": {
+        "../src/request.js": "export async function handleRequest(request) {\n  console.log(request);\n}\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "825a6d443ce27b6399d8d43ddd623f20",
+  "cacheData": { "env": {} }
+}

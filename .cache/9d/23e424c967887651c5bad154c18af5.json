@@ -1,0 +1,126 @@
+{
+  "id": "src/constants/db.ts",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/tsconfig.json",
+      "includedInParent": true,
+      "mtime": 1583964138497
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583807233410
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1584578109733
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.VERSION = exports.DB_NAME = exports.WRITE_ACCESS = void 0;\nvar WRITE_ACCESS = 'readwrite';\nexports.WRITE_ACCESS = WRITE_ACCESS;\nvar DB_NAME = 'sw-server';\nexports.DB_NAME = DB_NAME;\nvar VERSION = 1;\nexports.VERSION = VERSION;"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 7, "column": 0 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 1, "column": 13 },
+          "generated": { "line": 7, "column": 4 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 1, "column": 25 },
+          "generated": { "line": 7, "column": 16 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 1, "column": 28 },
+          "generated": { "line": 7, "column": 19 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 7, "column": 30 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 2, "column": 7 },
+          "generated": { "line": 9, "column": 0 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 2, "column": 13 },
+          "generated": { "line": 9, "column": 4 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 2, "column": 20 },
+          "generated": { "line": 9, "column": 11 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 2, "column": 23 },
+          "generated": { "line": 9, "column": 14 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 2, "column": 7 },
+          "generated": { "line": 9, "column": 25 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 3, "column": 7 },
+          "generated": { "line": 11, "column": 0 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 3, "column": 13 },
+          "generated": { "line": 11, "column": 4 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 3, "column": 20 },
+          "generated": { "line": 11, "column": 11 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 3, "column": 23 },
+          "generated": { "line": 11, "column": 14 }
+        },
+        {
+          "source": "src/constants/db.ts",
+          "name": null,
+          "original": { "line": 3, "column": 7 },
+          "generated": { "line": 11, "column": 15 }
+        }
+      ],
+      "sources": {
+        "src/constants/db.ts": "export const WRITE_ACCESS = 'readwrite';\nexport const DB_NAME = 'sw-server';\nexport const VERSION = 1;\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "4d1d1034a7844e174c88b972de791c81",
+  "cacheData": { "env": {} }
+}

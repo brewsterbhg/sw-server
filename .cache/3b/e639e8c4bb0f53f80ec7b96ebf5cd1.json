@@ -1,0 +1,96 @@
+{
+  "id": "src/constants/methods.ts",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/tsconfig.json",
+      "includedInParent": true,
+      "mtime": 1583964138497
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583807233410
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1584578109733
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.METHOD_POST = exports.METHOD_GET = void 0;\nvar METHOD_GET = 'GET';\nexports.METHOD_GET = METHOD_GET;\nvar METHOD_POST = 'POST';\nexports.METHOD_POST = METHOD_POST;"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "source": "src/constants/methods.ts",
+          "name": null,
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 7, "column": 0 }
+        },
+        {
+          "source": "src/constants/methods.ts",
+          "name": null,
+          "original": { "line": 1, "column": 13 },
+          "generated": { "line": 7, "column": 4 }
+        },
+        {
+          "source": "src/constants/methods.ts",
+          "name": null,
+          "original": { "line": 1, "column": 23 },
+          "generated": { "line": 7, "column": 14 }
+        },
+        {
+          "source": "src/constants/methods.ts",
+          "name": null,
+          "original": { "line": 1, "column": 26 },
+          "generated": { "line": 7, "column": 17 }
+        },
+        {
+          "source": "src/constants/methods.ts",
+          "name": null,
+          "original": { "line": 1, "column": 7 },
+          "generated": { "line": 7, "column": 22 }
+        },
+        {
+          "source": "src/constants/methods.ts",
+          "name": null,
+          "original": { "line": 2, "column": 7 },
+          "generated": { "line": 9, "column": 0 }
+        },
+        {
+          "source": "src/constants/methods.ts",
+          "name": null,
+          "original": { "line": 2, "column": 13 },
+          "generated": { "line": 9, "column": 4 }
+        },
+        {
+          "source": "src/constants/methods.ts",
+          "name": null,
+          "original": { "line": 2, "column": 24 },
+          "generated": { "line": 9, "column": 15 }
+        },
+        {
+          "source": "src/constants/methods.ts",
+          "name": null,
+          "original": { "line": 2, "column": 27 },
+          "generated": { "line": 9, "column": 18 }
+        },
+        {
+          "source": "src/constants/methods.ts",
+          "name": null,
+          "original": { "line": 2, "column": 7 },
+          "generated": { "line": 9, "column": 24 }
+        }
+      ],
+      "sources": {
+        "src/constants/methods.ts": "export const METHOD_GET = 'GET';\nexport const METHOD_POST = 'POST';\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "912072e1dae0a4fac2f6e6a37b4d0dd4",
+  "cacheData": { "env": {} }
+}

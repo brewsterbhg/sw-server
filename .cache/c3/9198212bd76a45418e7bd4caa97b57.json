@@ -1,0 +1,284 @@
+{
+  "id": "sw.js",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583807233410
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1584578109733
+    },
+    {
+      "name": "./src/db",
+      "loc": { "line": 1, "column": 21 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/sw.js",
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/src/db.ts"
+    },
+    {
+      "name": "./src/request",
+      "loc": { "line": 2, "column": 30 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/sw.js",
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/src/request.ts"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nvar _db = require(\"./src/db\");\n\nvar _request = require(\"./src/request\");\n\nself.addEventListener('install', function (event) {});\nself.addEventListener('activate', async function (event) {\n  await (0, _db.seed)();\n});\nself.addEventListener('fetch', async event => {\n  (0, _request.handleRequest)(event.request);\n});"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "generated": { "line": 3, "column": 0 },
+          "source": "sw.js",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 5, "column": 0 },
+          "source": "sw.js",
+          "original": { "line": 2, "column": 0 }
+        },
+        {
+          "name": "self",
+          "generated": { "line": 7, "column": 0 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "generated": { "line": 7, "column": 4 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 4 }
+        },
+        {
+          "name": "addEventListener",
+          "generated": { "line": 7, "column": 5 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 5 }
+        },
+        {
+          "generated": { "line": 7, "column": 21 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "generated": { "line": 7, "column": 22 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 22 }
+        },
+        {
+          "generated": { "line": 7, "column": 31 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "generated": { "line": 7, "column": 33 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 33 }
+        },
+        {
+          "name": "event",
+          "generated": { "line": 7, "column": 43 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 42 }
+        },
+        {
+          "generated": { "line": 7, "column": 48 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 33 }
+        },
+        {
+          "generated": { "line": 7, "column": 50 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 49 }
+        },
+        {
+          "generated": { "line": 7, "column": 51 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 51 }
+        },
+        {
+          "generated": { "line": 7, "column": 52 },
+          "source": "sw.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "name": "self",
+          "generated": { "line": 8, "column": 0 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "generated": { "line": 8, "column": 4 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 4 }
+        },
+        {
+          "name": "addEventListener",
+          "generated": { "line": 8, "column": 5 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 5 }
+        },
+        {
+          "generated": { "line": 8, "column": 21 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "generated": { "line": 8, "column": 22 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 22 }
+        },
+        {
+          "generated": { "line": 8, "column": 32 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "generated": { "line": 8, "column": 34 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 34 }
+        },
+        {
+          "name": "event",
+          "generated": { "line": 8, "column": 50 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 49 }
+        },
+        {
+          "generated": { "line": 8, "column": 55 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 34 }
+        },
+        {
+          "generated": { "line": 8, "column": 57 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 56 }
+        },
+        {
+          "generated": { "line": 9, "column": 0 },
+          "source": "sw.js",
+          "original": { "line": 7, "column": 2 }
+        },
+        {
+          "generated": { "line": 9, "column": 8 },
+          "source": "sw.js",
+          "original": { "line": 7, "column": 8 }
+        },
+        {
+          "generated": { "line": 9, "column": 23 },
+          "source": "sw.js",
+          "original": { "line": 7, "column": 2 }
+        },
+        {
+          "generated": { "line": 10, "column": 0 },
+          "source": "sw.js",
+          "original": { "line": 8, "column": 1 }
+        },
+        {
+          "generated": { "line": 10, "column": 1 },
+          "source": "sw.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "name": "self",
+          "generated": { "line": 11, "column": 0 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 0 }
+        },
+        {
+          "generated": { "line": 11, "column": 4 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 4 }
+        },
+        {
+          "name": "addEventListener",
+          "generated": { "line": 11, "column": 5 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 5 }
+        },
+        {
+          "generated": { "line": 11, "column": 21 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 0 }
+        },
+        {
+          "generated": { "line": 11, "column": 22 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 22 }
+        },
+        {
+          "generated": { "line": 11, "column": 29 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 0 }
+        },
+        {
+          "generated": { "line": 11, "column": 31 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 31 }
+        },
+        {
+          "name": "event",
+          "generated": { "line": 11, "column": 37 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 37 }
+        },
+        {
+          "generated": { "line": 11, "column": 42 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 31 }
+        },
+        {
+          "generated": { "line": 11, "column": 46 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 46 }
+        },
+        {
+          "generated": { "line": 12, "column": 0 },
+          "source": "sw.js",
+          "original": { "line": 11, "column": 2 }
+        },
+        {
+          "name": "event",
+          "generated": { "line": 12, "column": 30 },
+          "source": "sw.js",
+          "original": { "line": 11, "column": 16 }
+        },
+        {
+          "generated": { "line": 12, "column": 35 },
+          "source": "sw.js",
+          "original": { "line": 11, "column": 21 }
+        },
+        {
+          "name": "request",
+          "generated": { "line": 12, "column": 36 },
+          "source": "sw.js",
+          "original": { "line": 11, "column": 22 }
+        },
+        {
+          "generated": { "line": 12, "column": 43 },
+          "source": "sw.js",
+          "original": { "line": 11, "column": 2 }
+        },
+        {
+          "generated": { "line": 13, "column": 0 },
+          "source": "sw.js",
+          "original": { "line": 12, "column": 1 }
+        },
+        {
+          "generated": { "line": 13, "column": 1 },
+          "source": "sw.js",
+          "original": { "line": 10, "column": 0 }
+        }
+      ],
+      "sources": {
+        "sw.js": "import { seed } from './src/db';\nimport { handleRequest } from './src/request';\n\nself.addEventListener('install', function(event) {});\n\nself.addEventListener('activate', async function(event) {\n  await seed();\n});\n\nself.addEventListener('fetch', async event => {\n  handleRequest(event.request);\n});\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "49ae9aec7d6d2aa3bb0dbedd5af00e4a",
+  "cacheData": { "env": {} }
+}

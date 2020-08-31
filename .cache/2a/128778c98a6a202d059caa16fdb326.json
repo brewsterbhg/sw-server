@@ -1,0 +1,1531 @@
+{
+  "id": "yvr6",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1583332441389
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/node_modules/idb/package.json",
+      "includedInParent": true,
+      "mtime": 1583256758169
+    },
+    {
+      "name": "./wrap-idb-value.js",
+      "loc": { "line": 2, "column": 39 },
+      "parent": "/Users/keithbrewster/Documents/development/sw-api/node_modules/idb/build/esm/index.js",
+      "resolved": "/Users/keithbrewster/Documents/development/sw-api/node_modules/idb/build/esm/wrap-idb-value.js"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";Object.defineProperty(exports,\"__esModule\",{value:!0}),exports.deleteDB=n,exports.openDB=t,Object.defineProperty(exports,\"unwrap\",{enumerable:!0,get:function(){return e.u}}),Object.defineProperty(exports,\"wrap\",{enumerable:!0,get:function(){return e.w}});var e=require(\"./wrap-idb-value.js\");function t(t,n,{blocked:r,upgrade:o,blocking:d,terminated:s}={}){const i=indexedDB.open(t,n),a=(0,e.w)(i);return o&&i.addEventListener(\"upgradeneeded\",t=>{o((0,e.w)(i.result),t.oldVersion,t.newVersion,(0,e.w)(i.transaction))}),r&&i.addEventListener(\"blocked\",()=>r()),s&&i.addEventListener(\"close\",()=>s()),d&&a.then(e=>e.addEventListener(\"versionchange\",d)).catch(()=>{}),a}function n(t,{blocked:n}={}){const r=indexedDB.deleteDatabase(t);return n&&r.addEventListener(\"blocked\",()=>n()),(0,e.w)(r).then(()=>void 0)}const r=[\"get\",\"getKey\",\"getAll\",\"getAllKeys\",\"count\"],o=[\"put\",\"add\",\"delete\",\"clear\"],d=new Map;function s(e,t){if(!(e instanceof IDBDatabase)||t in e||\"string\"!=typeof t)return;if(d.get(t))return d.get(t);const n=t.replace(/FromIndex$/,\"\"),s=t!==n,i=o.includes(n);if(!(n in(s?IDBIndex:IDBObjectStore).prototype)||!i&&!r.includes(n))return;const a=async function(e,...t){const r=this.transaction(e,i?\"readwrite\":\"readonly\");let o=r.store;s&&(o=o.index(t.shift()));const d=o[n](...t);return i&&await r.done,d};return d.set(t,a),a}(0,e.r)(e=>({...e,get:(t,n,r)=>s(t,n)||e.get(t,n,r),has:(t,n)=>!!s(t,n)||e.has(t,n)}));"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 0 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 13 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 20 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 35 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 43 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 56 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 57 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 64 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 68 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 76 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 85 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 87 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 95 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 102 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 104 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 111 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 126 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 134 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 143 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 144 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 156 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 158 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 162 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 173 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 180 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 182 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 187 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 194 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 209 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 217 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 224 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 225 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 237 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 239 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 243 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 254 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 261 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 263 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 268 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 272 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 274 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 282 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 11, "column": 0 },
+          "generated": { "line": 1, "column": 305 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "openDB",
+          "original": { "line": 11, "column": 9 },
+          "generated": { "line": 1, "column": 314 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "name",
+          "original": { "line": 11, "column": 16 },
+          "generated": { "line": 1, "column": 316 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "version",
+          "original": { "line": 11, "column": 22 },
+          "generated": { "line": 1, "column": 318 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 11, "column": 31 },
+          "generated": { "line": 1, "column": 321 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "blocked",
+          "original": { "line": 11, "column": 33 },
+          "generated": { "line": 1, "column": 329 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 11, "column": 31 },
+          "generated": { "line": 1, "column": 331 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "upgrade",
+          "original": { "line": 11, "column": 42 },
+          "generated": { "line": 1, "column": 339 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 11, "column": 31 },
+          "generated": { "line": 1, "column": 341 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "blocking",
+          "original": { "line": 11, "column": 51 },
+          "generated": { "line": 1, "column": 350 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 11, "column": 31 },
+          "generated": { "line": 1, "column": 352 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "terminated",
+          "original": { "line": 11, "column": 61 },
+          "generated": { "line": 1, "column": 363 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 11, "column": 76 },
+          "generated": { "line": 1, "column": 366 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 12, "column": 10 },
+          "generated": { "line": 1, "column": 370 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 12, "column": 10 },
+          "generated": { "line": 1, "column": 376 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "indexedDB",
+          "original": { "line": 12, "column": 20 },
+          "generated": { "line": 1, "column": 378 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "open",
+          "original": { "line": 12, "column": 30 },
+          "generated": { "line": 1, "column": 388 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "name",
+          "original": { "line": 12, "column": 35 },
+          "generated": { "line": 1, "column": 393 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "version",
+          "original": { "line": 12, "column": 41 },
+          "generated": { "line": 1, "column": 395 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "openPromise",
+          "original": { "line": 13, "column": 10 },
+          "generated": { "line": 1, "column": 398 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 13, "column": 24 },
+          "generated": { "line": 1, "column": 401 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 13, "column": 29 },
+          "generated": { "line": 1, "column": 403 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 13, "column": 29 },
+          "generated": { "line": 1, "column": 405 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 13, "column": 29 },
+          "generated": { "line": 1, "column": 408 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "openPromise",
+          "original": { "line": 28, "column": 11 },
+          "generated": { "line": 1, "column": 411 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "upgrade",
+          "original": { "line": 14, "column": 8 },
+          "generated": { "line": 1, "column": 418 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 15, "column": 8 },
+          "generated": { "line": 1, "column": 421 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "addEventListener",
+          "original": { "line": 15, "column": 16 },
+          "generated": { "line": 1, "column": 423 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 15, "column": 33 },
+          "generated": { "line": 1, "column": 440 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "event",
+          "original": { "line": 15, "column": 50 },
+          "generated": { "line": 1, "column": 456 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "upgrade",
+          "original": { "line": 16, "column": 12 },
+          "generated": { "line": 1, "column": 460 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 16, "column": 20 },
+          "generated": { "line": 1, "column": 463 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 16, "column": 25 },
+          "generated": { "line": 1, "column": 465 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 16, "column": 25 },
+          "generated": { "line": 1, "column": 467 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 16, "column": 25 },
+          "generated": { "line": 1, "column": 470 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "result",
+          "original": { "line": 16, "column": 33 },
+          "generated": { "line": 1, "column": 472 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "event",
+          "original": { "line": 16, "column": 42 },
+          "generated": { "line": 1, "column": 480 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "oldVersion",
+          "original": { "line": 16, "column": 48 },
+          "generated": { "line": 1, "column": 482 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "event",
+          "original": { "line": 16, "column": 60 },
+          "generated": { "line": 1, "column": 493 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "newVersion",
+          "original": { "line": 16, "column": 66 },
+          "generated": { "line": 1, "column": 495 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 16, "column": 78 },
+          "generated": { "line": 1, "column": 507 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 16, "column": 83 },
+          "generated": { "line": 1, "column": 509 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 16, "column": 83 },
+          "generated": { "line": 1, "column": 511 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 16, "column": 83 },
+          "generated": { "line": 1, "column": 514 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "transaction",
+          "original": { "line": 16, "column": 91 },
+          "generated": { "line": 1, "column": 516 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "blocked",
+          "original": { "line": 19, "column": 8 },
+          "generated": { "line": 1, "column": 532 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 20, "column": 8 },
+          "generated": { "line": 1, "column": 535 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "addEventListener",
+          "original": { "line": 20, "column": 16 },
+          "generated": { "line": 1, "column": 537 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 20, "column": 33 },
+          "generated": { "line": 1, "column": 554 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 20, "column": 44 },
+          "generated": { "line": 1, "column": 564 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "blocked",
+          "original": { "line": 20, "column": 50 },
+          "generated": { "line": 1, "column": 568 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "terminated",
+          "original": { "line": 21, "column": 8 },
+          "generated": { "line": 1, "column": 573 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 22, "column": 8 },
+          "generated": { "line": 1, "column": 576 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "addEventListener",
+          "original": { "line": 22, "column": 16 },
+          "generated": { "line": 1, "column": 578 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 22, "column": 33 },
+          "generated": { "line": 1, "column": 595 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 22, "column": 42 },
+          "generated": { "line": 1, "column": 603 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "terminated",
+          "original": { "line": 22, "column": 48 },
+          "generated": { "line": 1, "column": 607 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "blocking",
+          "original": { "line": 23, "column": 8 },
+          "generated": { "line": 1, "column": 612 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "openPromise",
+          "original": { "line": 24, "column": 8 },
+          "generated": { "line": 1, "column": 615 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "then",
+          "original": { "line": 25, "column": 13 },
+          "generated": { "line": 1, "column": 617 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "db",
+          "original": { "line": 25, "column": 18 },
+          "generated": { "line": 1, "column": 622 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "db",
+          "original": { "line": 25, "column": 24 },
+          "generated": { "line": 1, "column": 625 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "addEventListener",
+          "original": { "line": 25, "column": 27 },
+          "generated": { "line": 1, "column": 627 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 25, "column": 44 },
+          "generated": { "line": 1, "column": 644 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "blocking",
+          "original": { "line": 25, "column": 61 },
+          "generated": { "line": 1, "column": 660 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "catch",
+          "original": { "line": 26, "column": 13 },
+          "generated": { "line": 1, "column": 664 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 26, "column": 19 },
+          "generated": { "line": 1, "column": 670 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "openPromise",
+          "original": { "line": 28, "column": 11 },
+          "generated": { "line": 1, "column": 678 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 35, "column": 0 },
+          "generated": { "line": 1, "column": 680 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "deleteDB",
+          "original": { "line": 35, "column": 9 },
+          "generated": { "line": 1, "column": 689 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "name",
+          "original": { "line": 35, "column": 18 },
+          "generated": { "line": 1, "column": 691 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 35, "column": 24 },
+          "generated": { "line": 1, "column": 694 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "blocked",
+          "original": { "line": 35, "column": 26 },
+          "generated": { "line": 1, "column": 702 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 35, "column": 38 },
+          "generated": { "line": 1, "column": 705 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 36, "column": 10 },
+          "generated": { "line": 1, "column": 709 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 36, "column": 10 },
+          "generated": { "line": 1, "column": 715 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "indexedDB",
+          "original": { "line": 36, "column": 20 },
+          "generated": { "line": 1, "column": 717 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "deleteDatabase",
+          "original": { "line": 36, "column": 30 },
+          "generated": { "line": 1, "column": 727 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "name",
+          "original": { "line": 36, "column": 45 },
+          "generated": { "line": 1, "column": 742 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 39, "column": 11 },
+          "generated": { "line": 1, "column": 745 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "blocked",
+          "original": { "line": 37, "column": 8 },
+          "generated": { "line": 1, "column": 752 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 38, "column": 8 },
+          "generated": { "line": 1, "column": 755 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "addEventListener",
+          "original": { "line": 38, "column": 16 },
+          "generated": { "line": 1, "column": 757 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 38, "column": 33 },
+          "generated": { "line": 1, "column": 774 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 38, "column": 44 },
+          "generated": { "line": 1, "column": 784 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "blocked",
+          "original": { "line": 38, "column": 50 },
+          "generated": { "line": 1, "column": 788 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 39, "column": 11 },
+          "generated": { "line": 1, "column": 794 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 39, "column": 16 },
+          "generated": { "line": 1, "column": 796 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 39, "column": 16 },
+          "generated": { "line": 1, "column": 798 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "request",
+          "original": { "line": 39, "column": 16 },
+          "generated": { "line": 1, "column": 801 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "then",
+          "original": { "line": 39, "column": 25 },
+          "generated": { "line": 1, "column": 804 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 39, "column": 30 },
+          "generated": { "line": 1, "column": 809 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "undefined",
+          "original": { "line": 39, "column": 36 },
+          "generated": { "line": 1, "column": 818 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 42, "column": 0 },
+          "generated": { "line": 1, "column": 821 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "readMethods",
+          "original": { "line": 42, "column": 6 },
+          "generated": { "line": 1, "column": 827 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 42, "column": 20 },
+          "generated": { "line": 1, "column": 829 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 42, "column": 21 },
+          "generated": { "line": 1, "column": 830 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 42, "column": 28 },
+          "generated": { "line": 1, "column": 836 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 42, "column": 38 },
+          "generated": { "line": 1, "column": 845 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 42, "column": 48 },
+          "generated": { "line": 1, "column": 854 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 42, "column": 62 },
+          "generated": { "line": 1, "column": 867 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "writeMethods",
+          "original": { "line": 43, "column": 6 },
+          "generated": { "line": 1, "column": 876 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 43, "column": 21 },
+          "generated": { "line": 1, "column": 878 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 43, "column": 22 },
+          "generated": { "line": 1, "column": 879 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 43, "column": 29 },
+          "generated": { "line": 1, "column": 885 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 43, "column": 36 },
+          "generated": { "line": 1, "column": 891 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 43, "column": 46 },
+          "generated": { "line": 1, "column": 900 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "cachedMethods",
+          "original": { "line": 44, "column": 6 },
+          "generated": { "line": 1, "column": 909 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 44, "column": 22 },
+          "generated": { "line": 1, "column": 911 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "Map",
+          "original": { "line": 44, "column": 26 },
+          "generated": { "line": 1, "column": 915 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 45, "column": 0 },
+          "generated": { "line": 1, "column": 919 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "getMethod",
+          "original": { "line": 45, "column": 9 },
+          "generated": { "line": 1, "column": 928 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 45, "column": 19 },
+          "generated": { "line": 1, "column": 930 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 45, "column": 27 },
+          "generated": { "line": 1, "column": 932 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 46, "column": 8 },
+          "generated": { "line": 1, "column": 935 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 46, "column": 10 },
+          "generated": { "line": 1, "column": 940 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "IDBDatabase",
+          "original": { "line": 46, "column": 28 },
+          "generated": { "line": 1, "column": 953 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 47, "column": 10 },
+          "generated": { "line": 1, "column": 967 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 47, "column": 18 },
+          "generated": { "line": 1, "column": 972 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 48, "column": 24 },
+          "generated": { "line": 1, "column": 975 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 48, "column": 15 },
+          "generated": { "line": 1, "column": 992 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 49, "column": 8 },
+          "generated": { "line": 1, "column": 994 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "cachedMethods",
+          "original": { "line": 51, "column": 8 },
+          "generated": { "line": 1, "column": 1001 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "cachedMethods",
+          "original": { "line": 51, "column": 8 },
+          "generated": { "line": 1, "column": 1004 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "get",
+          "original": { "line": 51, "column": 22 },
+          "generated": { "line": 1, "column": 1006 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 51, "column": 26 },
+          "generated": { "line": 1, "column": 1010 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 52, "column": 8 },
+          "generated": { "line": 1, "column": 1013 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "cachedMethods",
+          "original": { "line": 52, "column": 15 },
+          "generated": { "line": 1, "column": 1020 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "get",
+          "original": { "line": 52, "column": 29 },
+          "generated": { "line": 1, "column": 1022 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 52, "column": 33 },
+          "generated": { "line": 1, "column": 1026 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "targetFuncName",
+          "original": { "line": 53, "column": 10 },
+          "generated": { "line": 1, "column": 1029 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "targetFuncName",
+          "original": { "line": 53, "column": 10 },
+          "generated": { "line": 1, "column": 1035 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 53, "column": 27 },
+          "generated": { "line": 1, "column": 1037 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "replace",
+          "original": { "line": 53, "column": 32 },
+          "generated": { "line": 1, "column": 1039 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 53, "column": 40 },
+          "generated": { "line": 1, "column": 1047 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 53, "column": 54 },
+          "generated": { "line": 1, "column": 1060 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "useIndex",
+          "original": { "line": 54, "column": 10 },
+          "generated": { "line": 1, "column": 1064 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 54, "column": 21 },
+          "generated": { "line": 1, "column": 1066 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "targetFuncName",
+          "original": { "line": 54, "column": 30 },
+          "generated": { "line": 1, "column": 1070 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "isWrite",
+          "original": { "line": 55, "column": 10 },
+          "generated": { "line": 1, "column": 1072 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "writeMethods",
+          "original": { "line": 55, "column": 20 },
+          "generated": { "line": 1, "column": 1074 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "includes",
+          "original": { "line": 55, "column": 33 },
+          "generated": { "line": 1, "column": 1076 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "targetFuncName",
+          "original": { "line": 55, "column": 42 },
+          "generated": { "line": 1, "column": 1085 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 57, "column": 4 },
+          "generated": { "line": 1, "column": 1088 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "targetFuncName",
+          "original": { "line": 58, "column": 6 },
+          "generated": { "line": 1, "column": 1093 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "useIndex",
+          "original": { "line": 58, "column": 25 },
+          "generated": { "line": 1, "column": 1098 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "IDBIndex",
+          "original": { "line": 58, "column": 36 },
+          "generated": { "line": 1, "column": 1100 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "IDBObjectStore",
+          "original": { "line": 58, "column": 47 },
+          "generated": { "line": 1, "column": 1109 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prototype",
+          "original": { "line": 58, "column": 63 },
+          "generated": { "line": 1, "column": 1125 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "isWrite",
+          "original": { "line": 59, "column": 10 },
+          "generated": { "line": 1, "column": 1138 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "readMethods",
+          "original": { "line": 59, "column": 21 },
+          "generated": { "line": 1, "column": 1142 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "includes",
+          "original": { "line": 59, "column": 33 },
+          "generated": { "line": 1, "column": 1144 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "targetFuncName",
+          "original": { "line": 59, "column": 42 },
+          "generated": { "line": 1, "column": 1153 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 60, "column": 8 },
+          "generated": { "line": 1, "column": 1156 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "method",
+          "original": { "line": 62, "column": 10 },
+          "generated": { "line": 1, "column": 1163 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "method",
+          "original": { "line": 62, "column": 10 },
+          "generated": { "line": 1, "column": 1169 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 62, "column": 19 },
+          "generated": { "line": 1, "column": 1171 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "storeName",
+          "original": { "line": 62, "column": 35 },
+          "generated": { "line": 1, "column": 1186 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "args",
+          "original": { "line": 62, "column": 49 },
+          "generated": { "line": 1, "column": 1191 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "tx",
+          "original": { "line": 64, "column": 14 },
+          "generated": { "line": 1, "column": 1194 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "tx",
+          "original": { "line": 64, "column": 14 },
+          "generated": { "line": 1, "column": 1200 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 64, "column": 19 },
+          "generated": { "line": 1, "column": 1202 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "transaction",
+          "original": { "line": 64, "column": 24 },
+          "generated": { "line": 1, "column": 1207 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "storeName",
+          "original": { "line": 64, "column": 36 },
+          "generated": { "line": 1, "column": 1219 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "isWrite",
+          "original": { "line": 64, "column": 47 },
+          "generated": { "line": 1, "column": 1221 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 64, "column": 57 },
+          "generated": { "line": 1, "column": 1223 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 64, "column": 71 },
+          "generated": { "line": 1, "column": 1235 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 65, "column": 12 },
+          "generated": { "line": 1, "column": 1247 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 65, "column": 12 },
+          "generated": { "line": 1, "column": 1251 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "tx",
+          "original": { "line": 65, "column": 21 },
+          "generated": { "line": 1, "column": 1253 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "store",
+          "original": { "line": 65, "column": 24 },
+          "generated": { "line": 1, "column": 1255 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "useIndex",
+          "original": { "line": 66, "column": 12 },
+          "generated": { "line": 1, "column": 1261 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 67, "column": 12 },
+          "generated": { "line": 1, "column": 1265 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 67, "column": 21 },
+          "generated": { "line": 1, "column": 1267 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "index",
+          "original": { "line": 67, "column": 28 },
+          "generated": { "line": 1, "column": 1269 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "args",
+          "original": { "line": 67, "column": 34 },
+          "generated": { "line": 1, "column": 1275 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "shift",
+          "original": { "line": 67, "column": 39 },
+          "generated": { "line": 1, "column": 1277 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "returnVal",
+          "original": { "line": 68, "column": 14 },
+          "generated": { "line": 1, "column": 1287 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "returnVal",
+          "original": { "line": 68, "column": 14 },
+          "generated": { "line": 1, "column": 1293 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 68, "column": 26 },
+          "generated": { "line": 1, "column": 1295 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "targetFuncName",
+          "original": { "line": 68, "column": 33 },
+          "generated": { "line": 1, "column": 1297 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "args",
+          "original": { "line": 68, "column": 52 },
+          "generated": { "line": 1, "column": 1303 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "returnVal",
+          "original": { "line": 71, "column": 15 },
+          "generated": { "line": 1, "column": 1306 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "isWrite",
+          "original": { "line": 69, "column": 12 },
+          "generated": { "line": 1, "column": 1313 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "tx",
+          "original": { "line": 70, "column": 18 },
+          "generated": { "line": 1, "column": 1322 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "done",
+          "original": { "line": 70, "column": 21 },
+          "generated": { "line": 1, "column": 1324 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "returnVal",
+          "original": { "line": 71, "column": 15 },
+          "generated": { "line": 1, "column": 1329 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "method",
+          "original": { "line": 74, "column": 11 },
+          "generated": { "line": 1, "column": 1332 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "cachedMethods",
+          "original": { "line": 73, "column": 4 },
+          "generated": { "line": 1, "column": 1339 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "set",
+          "original": { "line": 73, "column": 18 },
+          "generated": { "line": 1, "column": 1341 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 73, "column": 22 },
+          "generated": { "line": 1, "column": 1345 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "method",
+          "original": { "line": 73, "column": 28 },
+          "generated": { "line": 1, "column": 1347 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "method",
+          "original": { "line": 74, "column": 11 },
+          "generated": { "line": 1, "column": 1350 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 0 },
+          "generated": { "line": 1, "column": 1353 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "oldTraps",
+          "original": { "line": 76, "column": 13 },
+          "generated": { "line": 1, "column": 1355 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "oldTraps",
+          "original": { "line": 76, "column": 13 },
+          "generated": { "line": 1, "column": 1357 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "oldTraps",
+          "original": { "line": 76, "column": 13 },
+          "generated": { "line": 1, "column": 1360 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 76, "column": 26 },
+          "generated": { "line": 1, "column": 1364 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "oldTraps",
+          "original": { "line": 77, "column": 7 },
+          "generated": { "line": 1, "column": 1368 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "get",
+          "original": { "line": 78, "column": 4 },
+          "generated": { "line": 1, "column": 1370 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 78, "column": 9 },
+          "generated": { "line": 1, "column": 1374 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 78, "column": 10 },
+          "generated": { "line": 1, "column": 1375 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 78, "column": 18 },
+          "generated": { "line": 1, "column": 1377 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "receiver",
+          "original": { "line": 78, "column": 24 },
+          "generated": { "line": 1, "column": 1379 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "getMethod",
+          "original": { "line": 78, "column": 37 },
+          "generated": { "line": 1, "column": 1383 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 78, "column": 47 },
+          "generated": { "line": 1, "column": 1385 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 78, "column": 55 },
+          "generated": { "line": 1, "column": 1387 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "oldTraps",
+          "original": { "line": 78, "column": 64 },
+          "generated": { "line": 1, "column": 1391 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "get",
+          "original": { "line": 78, "column": 73 },
+          "generated": { "line": 1, "column": 1393 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 78, "column": 77 },
+          "generated": { "line": 1, "column": 1397 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 78, "column": 85 },
+          "generated": { "line": 1, "column": 1399 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "receiver",
+          "original": { "line": 78, "column": 91 },
+          "generated": { "line": 1, "column": 1401 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "has",
+          "original": { "line": 79, "column": 4 },
+          "generated": { "line": 1, "column": 1404 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "original": { "line": 79, "column": 9 },
+          "generated": { "line": 1, "column": 1408 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 79, "column": 10 },
+          "generated": { "line": 1, "column": 1409 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 79, "column": 18 },
+          "generated": { "line": 1, "column": 1411 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "getMethod",
+          "original": { "line": 79, "column": 29 },
+          "generated": { "line": 1, "column": 1417 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 79, "column": 39 },
+          "generated": { "line": 1, "column": 1419 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 79, "column": 47 },
+          "generated": { "line": 1, "column": 1421 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "oldTraps",
+          "original": { "line": 79, "column": 56 },
+          "generated": { "line": 1, "column": 1425 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "has",
+          "original": { "line": 79, "column": 65 },
+          "generated": { "line": 1, "column": 1427 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "target",
+          "original": { "line": 79, "column": 69 },
+          "generated": { "line": 1, "column": 1431 }
+        },
+        {
+          "source": "../node_modules/idb/build/esm/index.js",
+          "name": "prop",
+          "original": { "line": 79, "column": 77 },
+          "generated": { "line": 1, "column": 1433 }
+        }
+      ],
+      "sources": {
+        "../node_modules/idb/build/esm/index.js": "import { w as wrap, r as replaceTraps } from './wrap-idb-value.js';\nexport { u as unwrap, w as wrap } from './wrap-idb-value.js';\n\n/**\n * Open a database.\n *\n * @param name Name of the database.\n * @param version Schema version.\n * @param callbacks Additional callbacks.\n */\nfunction openDB(name, version, { blocked, upgrade, blocking, terminated } = {}) {\n    const request = indexedDB.open(name, version);\n    const openPromise = wrap(request);\n    if (upgrade) {\n        request.addEventListener('upgradeneeded', event => {\n            upgrade(wrap(request.result), event.oldVersion, event.newVersion, wrap(request.transaction));\n        });\n    }\n    if (blocked)\n        request.addEventListener('blocked', () => blocked());\n    if (terminated)\n        request.addEventListener('close', () => terminated());\n    if (blocking) {\n        openPromise\n            .then(db => db.addEventListener('versionchange', blocking))\n            .catch(() => { });\n    }\n    return openPromise;\n}\n/**\n * Delete a database.\n *\n * @param name Name of the database.\n */\nfunction deleteDB(name, { blocked } = {}) {\n    const request = indexedDB.deleteDatabase(name);\n    if (blocked)\n        request.addEventListener('blocked', () => blocked());\n    return wrap(request).then(() => undefined);\n}\n\nconst readMethods = ['get', 'getKey', 'getAll', 'getAllKeys', 'count'];\nconst writeMethods = ['put', 'add', 'delete', 'clear'];\nconst cachedMethods = new Map();\nfunction getMethod(target, prop) {\n    if (!(target instanceof IDBDatabase &&\n        !(prop in target) &&\n        typeof prop === 'string')) {\n        return;\n    }\n    if (cachedMethods.get(prop))\n        return cachedMethods.get(prop);\n    const targetFuncName = prop.replace(/FromIndex$/, '');\n    const useIndex = prop !== targetFuncName;\n    const isWrite = writeMethods.includes(targetFuncName);\n    if (\n    // Bail if the target doesn't exist on the target. Eg, getAll isn't in Edge.\n    !(targetFuncName in (useIndex ? IDBIndex : IDBObjectStore).prototype) ||\n        !(isWrite || readMethods.includes(targetFuncName))) {\n        return;\n    }\n    const method = async function (storeName, ...args) {\n        // isWrite ? 'readwrite' : undefined gzipps better, but fails in Edge :(\n        const tx = this.transaction(storeName, isWrite ? 'readwrite' : 'readonly');\n        let target = tx.store;\n        if (useIndex)\n            target = target.index(args.shift());\n        const returnVal = target[targetFuncName](...args);\n        if (isWrite)\n            await tx.done;\n        return returnVal;\n    };\n    cachedMethods.set(prop, method);\n    return method;\n}\nreplaceTraps(oldTraps => ({\n    ...oldTraps,\n    get: (target, prop, receiver) => getMethod(target, prop) || oldTraps.get(target, prop, receiver),\n    has: (target, prop) => !!getMethod(target, prop) || oldTraps.has(target, prop),\n}));\n\nexport { deleteDB, openDB };\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "8182e8e66ce6bcd17ddbf42fb75bd5d7",
+  "cacheData": { "env": {} }
+}

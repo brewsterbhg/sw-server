@@ -108,6 +108,7 @@ export async function seed(): Promise<void> {
     throw new Error('Schema must be provided to initialize database!');
   }
 
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   const db = await openDB(DB_NAME, VERSION, {
     upgrade(db) {
       (schema as any).forEach(
@@ -121,6 +122,7 @@ export async function seed(): Promise<void> {
   (schema as any).forEach(({ storeName = '', data = [] }: Partial<Store>) =>
     data.forEach(async (item: object) => await add(storeName, item)),
   );
+  /* eslint-enable @typescript-eslint/no-explicit-any */
 }
 
 /**

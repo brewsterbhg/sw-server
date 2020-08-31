@@ -1,0 +1,212 @@
+{
+  "id": "schema/index.js",
+  "dependencies": [
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/.babelrc",
+      "includedInParent": true,
+      "mtime": 1583807233410
+    },
+    {
+      "name": "/Users/keithbrewster/Documents/development/sw-api/package.json",
+      "includedInParent": true,
+      "mtime": 1584578109733
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.schema = void 0;\nconst schema = [{\n  storeName: 'store1',\n  autoIncrement: 'true',\n  keyPath: 'id',\n  data: [{\n    foo: 'bar'\n  }]\n}];\nexports.schema = schema;"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "generated": { "line": 7, "column": 0 },
+          "source": "schema/index.js",
+          "original": { "line": 1, "column": 7 }
+        },
+        {
+          "name": "schema",
+          "generated": { "line": 7, "column": 6 },
+          "source": "schema/index.js",
+          "original": { "line": 1, "column": 13 }
+        },
+        {
+          "generated": { "line": 7, "column": 12 },
+          "source": "schema/index.js",
+          "original": { "line": 1, "column": 19 }
+        },
+        {
+          "generated": { "line": 7, "column": 15 },
+          "source": "schema/index.js",
+          "original": { "line": 1, "column": 22 }
+        },
+        {
+          "generated": { "line": 7, "column": 16 },
+          "source": "schema/index.js",
+          "original": { "line": 2, "column": 2 }
+        },
+        {
+          "name": "storeName",
+          "generated": { "line": 8, "column": 0 },
+          "source": "schema/index.js",
+          "original": { "line": 3, "column": 4 }
+        },
+        {
+          "name": "storeName",
+          "generated": { "line": 8, "column": 2 },
+          "source": "schema/index.js",
+          "original": { "line": 3, "column": 4 }
+        },
+        {
+          "generated": { "line": 8, "column": 11 },
+          "source": "schema/index.js",
+          "original": { "line": 3, "column": 13 }
+        },
+        {
+          "generated": { "line": 8, "column": 13 },
+          "source": "schema/index.js",
+          "original": { "line": 3, "column": 15 }
+        },
+        {
+          "generated": { "line": 8, "column": 21 },
+          "source": "schema/index.js",
+          "original": { "line": 2, "column": 2 }
+        },
+        {
+          "name": "autoIncrement",
+          "generated": { "line": 9, "column": 0 },
+          "source": "schema/index.js",
+          "original": { "line": 4, "column": 4 }
+        },
+        {
+          "name": "autoIncrement",
+          "generated": { "line": 9, "column": 2 },
+          "source": "schema/index.js",
+          "original": { "line": 4, "column": 4 }
+        },
+        {
+          "generated": { "line": 9, "column": 15 },
+          "source": "schema/index.js",
+          "original": { "line": 4, "column": 17 }
+        },
+        {
+          "generated": { "line": 9, "column": 17 },
+          "source": "schema/index.js",
+          "original": { "line": 4, "column": 19 }
+        },
+        {
+          "generated": { "line": 9, "column": 23 },
+          "source": "schema/index.js",
+          "original": { "line": 2, "column": 2 }
+        },
+        {
+          "name": "keyPath",
+          "generated": { "line": 10, "column": 0 },
+          "source": "schema/index.js",
+          "original": { "line": 5, "column": 4 }
+        },
+        {
+          "name": "keyPath",
+          "generated": { "line": 10, "column": 2 },
+          "source": "schema/index.js",
+          "original": { "line": 5, "column": 4 }
+        },
+        {
+          "generated": { "line": 10, "column": 9 },
+          "source": "schema/index.js",
+          "original": { "line": 5, "column": 11 }
+        },
+        {
+          "generated": { "line": 10, "column": 11 },
+          "source": "schema/index.js",
+          "original": { "line": 5, "column": 13 }
+        },
+        {
+          "generated": { "line": 10, "column": 15 },
+          "source": "schema/index.js",
+          "original": { "line": 2, "column": 2 }
+        },
+        {
+          "name": "data",
+          "generated": { "line": 11, "column": 0 },
+          "source": "schema/index.js",
+          "original": { "line": 6, "column": 4 }
+        },
+        {
+          "name": "data",
+          "generated": { "line": 11, "column": 2 },
+          "source": "schema/index.js",
+          "original": { "line": 6, "column": 4 }
+        },
+        {
+          "generated": { "line": 11, "column": 6 },
+          "source": "schema/index.js",
+          "original": { "line": 6, "column": 8 }
+        },
+        {
+          "generated": { "line": 11, "column": 8 },
+          "source": "schema/index.js",
+          "original": { "line": 6, "column": 10 }
+        },
+        {
+          "generated": { "line": 11, "column": 9 },
+          "source": "schema/index.js",
+          "original": { "line": 7, "column": 6 }
+        },
+        {
+          "name": "foo",
+          "generated": { "line": 12, "column": 0 },
+          "source": "schema/index.js",
+          "original": { "line": 8, "column": 8 }
+        },
+        {
+          "name": "foo",
+          "generated": { "line": 12, "column": 4 },
+          "source": "schema/index.js",
+          "original": { "line": 8, "column": 8 }
+        },
+        {
+          "generated": { "line": 12, "column": 7 },
+          "source": "schema/index.js",
+          "original": { "line": 8, "column": 11 }
+        },
+        {
+          "generated": { "line": 12, "column": 9 },
+          "source": "schema/index.js",
+          "original": { "line": 8, "column": 13 }
+        },
+        {
+          "generated": { "line": 13, "column": 0 },
+          "source": "schema/index.js",
+          "original": { "line": 7, "column": 6 }
+        },
+        {
+          "generated": { "line": 13, "column": 3 },
+          "source": "schema/index.js",
+          "original": { "line": 6, "column": 10 }
+        },
+        {
+          "generated": { "line": 14, "column": 0 },
+          "source": "schema/index.js",
+          "original": { "line": 2, "column": 2 }
+        },
+        {
+          "generated": { "line": 14, "column": 1 },
+          "source": "schema/index.js",
+          "original": { "line": 1, "column": 22 }
+        },
+        {
+          "generated": { "line": 14, "column": 2 },
+          "source": "schema/index.js",
+          "original": { "line": 1, "column": 7 }
+        }
+      ],
+      "sources": {
+        "schema/index.js": "export const schema = [\n  {\n    storeName: 'store1',\n    autoIncrement: 'true',\n    keyPath: 'id',\n    data: [\n      {\n        foo: 'bar',\n      },\n    ],\n  },\n];\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "117e6e65d549407da1a7d6d21b3bd8f6",
+  "cacheData": { "env": {} }
+}
